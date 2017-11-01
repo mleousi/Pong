@@ -1,5 +1,4 @@
 # Implementation of classic arcade game Pong
-#T
 
 import simplegui
 import random
@@ -31,10 +30,9 @@ def spawn_ball(direction):
     else:
         ball_vel = [float(- random.randrange(1, 3)), float(- random.randrange(1, 3))]
         
-        
-    
+  
 
-# define event handlers
+# event handlers
 def new_game():
     global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel  # these are numbers
     global score1, score2  # these are ints
